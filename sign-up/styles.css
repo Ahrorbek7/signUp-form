@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  box-sizing: border-box;
+}
+
+h1,
+.photo-credit,
+.photo-source {
+  margin: 0;
+  font-family: "IM Fell Double Pica", serif;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+/* Brand section */
+.brand-container {
+  background-image: url("./images/aaron-burden-xG8IQMqMITM-unsplash.jpg");
+  background-repeat: no-repeat;
+  color: rgb(233, 233, 233);
+  background-size: cover;
+  width: 35%;
+}
+
+/* Sign up section */
+.sign-up-container {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
+.brand-container a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo-name-container,
+.credit-container {
+  display: flex;
+  height: 50%;
+}
+
+.image-header-wrapper {
+  background-color: rgba(0, 0, 0, 0.253);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  gap: 5%;
+  height: 34%;
+  width: 100%;
+  padding: 2% 2%;
+}
+
+#odin-logo {
+  max-height: 100%;
+}
+
+.credit-container {
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+.top-divider,
+.bottom-divider {
+  display: flex;
+  flex: 1;
+  padding: 3%;
+}
+
+.top-divider {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.middle-divider {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 3%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+.bottom-divider {
+  flex-direction: column;
+  gap: 3%;
+}
+
+.form-container {
+  flex: 1;
+}
+
+.form-container form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+h3 {
+  margin: 0;
+  margin-bottom: 2%;
+}
+
+input {
+  height: 25px;
+  width: 250px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  padding-left: 4px;
+}
+
+input:focus {
+  outline: none;
+  border-color: rgb(82, 143, 255);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  transition: all 0.1s;
+}
+
+.invalid-password {
+  border-color: red;
+}
+
+.error-not-matching {
+  font-size: 0.7rem;
+  color: red;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+.create-account-btn {
+  appearance: none;
+  height: 45px;
+  width: 200px;
+  cursor: pointer;
+  border-style: none;
+  background-color: rgb(33, 37, 34);
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.create-account-btn:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+#login-link {
+  text-decoration: none;
+  color: rgb(37, 33, 33);
+  font-weight: bolder;
+}

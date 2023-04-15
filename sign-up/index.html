@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Odin Sign up Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Main container -->
+  <div class="main-container">
+    <div class="brand-container">
+      <div class="logo-name-container">
+        <div class="image-header-wrapper">
+          <img src="./images/odin-logo.png" id="odin-logo" alt="#" />
+          <h1>Odin Project</h1>
+        </div>
+      </div>
+      <div class="credit-container">
+        <!-- Credit div -->
+        <p id="credit-text">
+          Photo by
+          on
+          <a href="https://unsplash.com/photos/QdRnZlzYJPA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            class="photo-source">Unsplash</a>
+        </p>
+      </div>
+    </div>
+    <!-- Sign up section -->
+    <div class="sign-up-container">
+      <!-- Top section -->
+      <div class="top-divider">
+        <h2>SHADOW WIZARD MONEY GANG. WE LOVE CASTING SPELLS.</h2>
+      </div>
+      <div class="middle-divider">
+        <div class="sign-up-header-container">
+          <h3>Let's get underway!</h3>
+        </div>
+        <!-- Form container -->
+        <div class="form-container">
+          <form>
+            <div class="form-group">
+              <label for="first-name-input">First Name</label>
+              <input id="first-name-input" type="text" required />
+            </div>
+            <div class="form-group">
+              <label for="last-name-input">Last Name</label>
+              <input id="last-name-input" type="text" required />
+            </div>
+            <div class="form-group">
+              <label for="email-input">Email</label>
+              <input id="email-input" type="email" required />
+            </div>
+            <div class="form-group">
+              <label for="tel-number-input">Phone Number</label>
+              <input id="tel-number-input" type="tel" required />
+            </div>
+            <div class="form-group">
+              <label for="password-input">Password</label>
+              <input id="password-input" class="mismatched-password" type="password" required />
+            </div>
+            <div class="form-group">
+              <label for="confirm-password-input">Confirm Password</label>
+              <input id="confirm-password-input" type="password" required />
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Bottom section -->
+      <div class="bottom-divider">
+        <div class="create-account-container">
+          <button class="create-account-btn">Create Account</button>
+        </div>
+        <div class="login-container">
+          <p>Already have an account? <a id="login-link" href="#">Log in</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
